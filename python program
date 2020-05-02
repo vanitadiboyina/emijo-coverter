@@ -1,0 +1,23 @@
+# emijo-coverter
+#this program converts text to emojis if it found some of the emojis in text format.
+
+
+def emoji_converter(message):
+    words=message.split(" ")
+    emojis={":)": "🙂" , ":(" : "🙁" , ":|" : "😐" , "XD": "😆" , "<3" : "❤" , ":o": "😯" , ":p" : "😜" ,
+            "lol":"😃", "bless" : "😇" , "danger" : "☠" , "party" : "🎉🥳" , "power": "💪" , "cute" : "😘😍", 
+            "gift": "🎁" ,"cake" : "🎂", ";)":"😉" , "punch":"👊" , "call":"📞"}
+    output =" " 
+    for word in words :
+        output += emojis.get(word,word)+ " "
+    print(output)
+
+message=""" hi dear :) . how are you ? i saw your post in insta. you look cute . may god bless you with more talents like those. By the way my birthday is coming soon.i am giving party. you need to come thatday with a gift :p . i would <3 to have party with you. if you neglet this i will give you a punch , my punch has more power  which is danger for you ;) so be care full XD . by the way bring  a cake also. i know u have no words :| to say after seeing this text. i am just kidding lol . call me after watching this txt. """
+emoji_converter(message)
+
+
+
+
+# output:  hi dear 🙂 . how are you ? i saw your post in insta. you look 😘😍 . may god 😇 you with more talents like those. By the way my birthday is coming soon.i am giving party. you need to come thatday with a 🎁 😜 . i would ❤ to have 🎉🥳 with you. if you neglet this i will give you a 👊 , my 👊 has more 💪  which is ☠ for you 😉 so be care full 😆 . by the way bring  a 🎂 also. i know
+u have no words 😐 to say after seeing this text. i am just kidding 😃 . 📞 me after watching this txt.                                                       
+              
